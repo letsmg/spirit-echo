@@ -15,9 +15,9 @@ jobs:
         run: |
           # Copia apenas os arquivos necessários para produção
           mkdir deploy
-          cp -r public/* deploy/
-          cp .htaccess deploy/ 2>/dev/null || echo ".htaccess não encontrado"
-          
+          cp -r public deploy/
+          cp .htaccess deploy/public/ 2>/dev/null || echo ".htaccess não encontrado"
+
           # Cria o zip para deploy
           cd deploy
           zip -r ../deploy.zip .
