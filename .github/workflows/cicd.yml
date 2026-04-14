@@ -44,7 +44,7 @@ jobs:
             sudo rm /tmp/deploy.zip
 
             echo "Setting permissions..."
-            sudo chown -R www-data:www-data /var/www/jogo
+            sudo chown -R www-data:www-data /var/www/spirits_ai
             sudo chmod -R 755 .
             
             echo "Deploy completed successfully!"
