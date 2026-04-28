@@ -18,7 +18,7 @@ class AIResponseGenerator {
     async detectUserLocation() {
         try {
             // Usar API gratuita de geolocalização (ip-api.com)
-            const response = await fetch('http://ip-api.com/json/');
+            const response = await fetch('https://ip-api.com/json/');
             const data = await response.json();
             
             if (data.countryCode) {
